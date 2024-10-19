@@ -1,0 +1,15 @@
+.card {
+    background-color: #FF6060;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-content h3 {
+    color: white;
+  }
+  

@@ -1,0 +1,24 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.banner img {
+  width: 1240px;
+  height: 223px;
+  object-fit: cover;
+  filter: brightness(0.4);
+  border-radius: 25px;
+}
+  
+  .banner h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+  }

@@ -1,17 +1,29 @@
-import React from 'react';
-import Banner from '../components/Banner';
+import React, { useEffect, useState } from 'react';
 import Card from '../components/Card';
+import Banner from '../components/Banner';
 
 const HomePage = () => {
-  const locations = ['Titre de la location 1', 'Titre de la location 2', 'Titre de la location 3'];
+  const [logements, setLogements] = useState([]);
+
+  // Charger les données de logements.json
+  useEffect(() => {
+    fetch('/logements.json') 
+      .then(response => response.json())
+      .then(data => setLogements(data))
+      .catch(error => console.error('Erreur lors du chargement des données:', error));
+  }, []);
 
   return (
     <div>
       <Banner />
-      <section className="cards-section">
+      <section>
         <div className="cards-container">
-          {locations.map((title, index) => (
-            <Card key={index} title={title} />
+          {logements.map((logement) => (
+            <Card 
+              key={logement.id}
+              title={logement.title}
+              cover={logement.cover}
+            />
           ))}
         </div>
       </section>

@@ -1,14 +1,13 @@
 import React from 'react';
 import './Card.css';  // Style pour la carte
 
-function Card({ title }) {
+const Card = ({ title, cover }) => {
   return (
     <div className="card">
-      <div className="card-content">
-        <h3>{title}</h3>
-      </div>
+      <img src={cover} alt={title} className="card-image" />
+      <div className="card-title">{title}</div>
     </div>
   );
-}
+};
 
 export default Card;

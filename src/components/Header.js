@@ -1,5 +1,6 @@
 import React from 'react';
-import './Header.css';  // Tu vas créer ce fichier pour styliser
+import './Header.css'; 
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -9,8 +10,8 @@ function Header() {
       </div>
       <nav>
         <ul className="nav-links">
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/about">À propos</a></li>
+          <li><Link to="/">Accueil</Link></li>
+          <li><Link to="/about">À propos</Link></li>
         </ul>
       </nav>
     </header>

@@ -1,0 +1,32 @@
+.collapse {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .collapse-header {
+    background-color: #ff6060;
+    padding-left: 10px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .collapse-content {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ff6060;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+  }
+  
+  .arrow {
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow.open {
+    transform: rotate(180deg); /* Flèche inversée quand la section est ouverte */
+  }
+  

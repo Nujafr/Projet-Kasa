@@ -1,12 +1,12 @@
 import React from 'react';
-import './Banner.css';  // Pour le style
+import './Banner.css';
 
-function Banner() {
+function Banner({ imageUrl, altText, bannerTitle}) {
   return (
-    <section className="banner">
-      <img src="/e270fc8fc902a1eb738458e7b29c1899.jpg" alt="Banner" />
-      <h2>Chez vous, partout et ailleurs</h2>
-    </section>
+    <div className="banner">
+      <img src={imageUrl} alt={altText} className="banner-image" />
+      <h2>{bannerTitle}</h2>
+    </div>
   );
 }
 

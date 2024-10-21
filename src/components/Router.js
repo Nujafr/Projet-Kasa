@@ -5,6 +5,7 @@ import HomePage from '../pages/HomePage';    // Page d'accueil
 import AboutPage from '../pages/AboutPage';  // Page à propos
 import NotFoundPage from '../pages/NotFoundPage'; // Page 404
 import Layout from './Layout';              // Layout principal
+import LogementDetail from '../pages/LogementDetail'; //Page Détails Logement
 
 const AppRouter = () => {
   return (
@@ -13,7 +14,8 @@ const AppRouter = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="*" element={<NotFoundPage />} /> {/* Route 404 */}
+          <Route path="*" element={<NotFoundPage />} />
+          <Route path="/logement/:id" element={<LogementDetail />} />
         </Routes>
       </Layout>
     </Router>

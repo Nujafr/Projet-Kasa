@@ -1,0 +1,25 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.error h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: #FF6060;
+    font-size: 288px;
+    margin: 30px;
+}
+
+.error p {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: #FF6060;
+    font-size: 36px;
+}
+
+.nav-return {
+    list-style-type: none;
+}
